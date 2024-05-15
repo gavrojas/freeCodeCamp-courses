@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Añadir ícono a la página -->
+  <link rel="icon" type="image/png" href="Images/favicon-pizza.png">
+  <title>Toppings de pizza</title>
+</head>
+  <body>
+    <!-- El texto y comentarios son nodos -->
+    <!-- shift + alt + F -- reacomodar identación -->
+    <div id="contenedor">
+      <h1 id="titulo">🍕<br>Toppings de Pizza</h1>
+      <!-- h2 creado para mirar qué pasa si se repite el id de un elemento. En este caso solo selecciona y da la información del primer elemento que encuentra con ese ID.  -->
+      <!-- <h2 id="titulo">Práctica</h2> -->
+      <ul id="lista-topings">
+        <!-- Una forma de añadir un evento es desde acá desde HTML  -->
+        <!-- Pero en la realidad no es práctico escribir esto en HTML -->
+        <!-- <li onclick="mostrarClick('Aceitunas')" class="topping fondo-marron" id="aceitunas">Aceitunas</li>
+        <li onclick="mostrarClick('Cebolla')" class="topping fondo-naranja">Cebolla</li>
+        
+        <li onclick="mostrarClick('Albahaca')" onclick="mostrarClick()" class="topping fondo-marron" id="albahaca">Albahaca</li>
+        <li onclick="mostrarClick('Chanpiñones')" class="topping fondo-naranja">Champiñones</li> -->
+        <li class="topping fondo-marron" id="aceitunas">Aceitunas</li>
+        <li class="topping fondo-naranja">Cebolla</li>
+        
+        <li class="topping fondo-marron" id="albahaca">Albahaca</li>
+        <li class="topping fondo-naranja">Champiñones</li>
+      </ul>
+      <!-- añadir un enlace  -->
+      <a href="https://www.freecodecamp.org/espanol/">freeCodeCamp en Español</a>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

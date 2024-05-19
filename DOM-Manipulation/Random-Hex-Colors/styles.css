@@ -1,0 +1,55 @@
+/* *Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* le dice al navegador cómo va calcular el tamaño del elemento en base a su margin y su padding */
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+body {
+    background-color: #2B807B;
+    text-align: center;
+}
+
+.centrar-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* *Contenedor */
+
+#contenedor {
+    height: 220px;
+    width: 450px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 50px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* *Texto */
+
+#color {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+button {
+    font-size: 30px;
+    color: white;
+    border-radius: 20px;
+    background-color: #008CBA;
+    margin: 15px;
+    padding: 10px 30px;
+    border: 2px solid #008CBA;
+    user-select: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #05455a;
+}

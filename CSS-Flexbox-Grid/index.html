@@ -1,63 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Esta línea me permite utilizar los íconos "Font Awesome" ent tu proyecto -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="navbar">
-        <!-- En el div que envuelve los elementos en esta sección (la barra de navegación), registramos el contenedor y la clase (css) flex. -->
-        <!-- .container para asegurarnos que los elementos internos no excedan cierto ancho, el cual especificaremos en CSS -->
-        <!-- .flex para mostrar los elementos hijos alineados horizontalmente (lado-a-lado) usando CSS Flexbox. -->
-        <div class="container flex">
-            <h1 class="logo">Skillz</h1>
-            <nav>
-                <ul>
-                    <li class="nav">
-                        <a class="outline" href="">Log in</a>
-                    </li>
-                    <li class="nav">
-                        <a class="outline" href="">Check courses</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      <!-- En el div que envuelve los elementos en esta sección (la barra de navegación), registramos el contenedor y la clase (css) flex. -->
+      <!-- .container para asegurarnos que los elementos internos no excedan cierto ancho, el cual especificaremos en CSS -->
+      <!-- .flex para mostrar los elementos hijos alineados horizontalmente (lado-a-lado) usando CSS Flexbox. -->
+      <div class="container flex">
+        <h1 class="logo">Skillz</h1>
+        <nav>
+          <ul>
+            <li class="nav">
+              <a class="outline" href="">Log in</a>
+            </li>
+            <li class="nav">
+              <a class="outline" href="">Check courses</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
+    <!-- Area de presentación  -->
     <section class="showcase">
-        <div class="container">
-            <div class="grid">
-                <div class="grid-item-1">
-                    <div class="showcase-text">
-                        <h1>Aprende cualquier habilidad digital que elijas, hoy!</h1>
-                        <p class="supporting-text"> Más de 30,000 estudiantes están aprendiendo esto.</p>
-                    </div>
-                    <div class="showcase-form">
-                        <form action="">
-                            <input type="email" placeholder="Ingresa tu correo electrónico">
-                            <input type="submit" class="btn" value="Empieza a aprender">
-                        </form>
-                        <p class="litte-info">Prueba nuestros cursos gratuitos</p>
-                    </div>
-                </div>
-                <div class="grid-item-2">
-                    <div class="image">
-                        <img src="./images/transparent.png" alt="">
-                    </div>
-                </div>
+      <div class="container">
+        <div class="grid">
+          <div class="grid-item-1">
+            <div class="showcase-text">
+              <h1>Aprende cualquier habilidad digital que elijas, hoy!</h1>
+              <p class="supporting-text"> Más de 30,000 estudiantes están aprendiendo esto.</p>
             </div>
+            <div class="showcase-form">
+              <form action="">
+                <input type="email" placeholder="Ingresa tu correo electrónico">
+                <input type="submit" class="btn" value="Empieza a aprender">
+              </form>
+              <p class="litte-info">Prueba nuestros cursos gratuitos</p>
+            </div>
+          </div>
+          <div class="grid-item-2">
+            <div class="image">
+              <img src="./images/transparent.png" alt="">
+            </div>
+          </div>
         </div>
+      </div>
     </section>
+    
+    <!-- Seccion estadísticas -->
+    <div class="lower-container container">
+      <section class="stats">
+        <div class="flex">
+          <div class="stat">
+            <i class="fa fa-folder-open fa-2x" aria-hidden="true" ></i>
+            <h3 class="title">Más de 300 cursos disponibles</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore laudantium recusandae soluta blanditiis ipsa rerum, ad earum, sed illum iste, illo eveniet nostrum nihil minus eligendi porro hic vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ab, maiores in magnam sequi repellat voluptatum omnis. Ipsam, quis rerum!</p>
+          </div>
+          <div class="stat">
+            <i class="fa fa-graduation-cap fa-2x" aria-hidden="true" ></i>
+            <h3 class="title">Certificado gratuito para todos los cursos</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni ipsum, perferendis eius fugiat vitae voluptas. Doloribus culpa excepturi id eligendi labore, sunt, impedit suscipit eaque praesentium, assumenda maiores iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ab, maiores in magnam sequi repellat voluptatum omnis. Ipsam, quis rerum!</p>
+          </div>
+          <div class="stat">
+            <i class="fa fa-credit-card-alt fa-2x" aria-hidden="true" ></i>
+            <h3 class="title">Reserva una sesión 1 a 1 por tan solo $5</h3>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum est voluptatibus eius quod natus quidem rerum impedit atque nostrum libero, amet veritatis aut repellat, sed repellendus commodi eum! Nam, laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ab, maiores in magnam sequi repellat voluptatum omnis. Ipsam, quis rerum!</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Seccion testimonios -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonial grid-3">
+          <div class="card">
+            <div class="circle">
+              <img src="images/4.jpg" alt="">
+            </div>
+            <h3>Aston</h3>
+            <p>He aprendido desarrollo web usando esta plataforma y diré que es la mejor plataforma para aprender. Definitivamente vale la pena la inversión!</p>
+          </div>
 
-    <p> <class="texto-rojo" Lorem ipsum <hr> dolor sit amet consectetur <strong> elit </strong>. <em>Sequi</em>, magni?</p>
-    <p>Hola </p>
-    <p>Hola </p>
-    <em>Hola</em>
-    <em>Hola</em>
-    <a href="http://www.w3schools.com"> W3Schools</a>" 
-    <a name="http://www.w3schools.com">W3Schools.com</a> 
-</body>
+          <div class="card">
+            <div class="circle">
+              <img src="images/5.jpg" alt="">
+            </div>
+            <h3>Beth</h3>
+            <p>He aprendido redacción usando esta plataforma y diré que es la mejor plataforma para aprender. Definitivamente vale la pena la inversión!</p>
+          </div>
+
+          <div class="card">
+            <div class="circle">
+              <img src="images/6.jpg" alt="">
+            </div>
+            <h3>Chris</h3>
+            <p>He aprendido marketing de afiliados usando esta plataforma y diré que es la mejor plataforma para aprender. Definitivamente vale la pena la inversión!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container grid-3">
+        <div class="copyright">
+          <h1>Skillz</h1>
+          <p>Copyrigh &copy; 2021</p>
+        </div>
+        <nav class="links">
+          <ul>
+            <li><a href="" class="outline">Home</a></li>
+            <li><a href="" class="outline">Tutors</a></li>
+            <li><a href="" class="outline">Categories</a></li>
+          </ul>
+        </nav>
+        <div class="profiles">
+          <a href=""><em class="fab fa-twitter fa-2x"></em></a>
+          <a href=""><em class="fab fa-instagram fa-2x"></em></a>
+          <a href=""><em class="fab fa-facebook fa-2x"></em></a>
+          <a href=""><em class="fab fa-whatsapp fa-2x"></em></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
